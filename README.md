@@ -18,8 +18,8 @@ This notebook serves as final project for the "How to win a data science competi
 In this competition I worked with a challenging time-series dataset consisting of daily sales data, kindly provided by the largest Russian software firms - 1C Company. The goal is to predict total sales for every product and store in the next month. The list of shops and products slightly changes every month. Creating a robust model that can handle such situations is part of the challenge.
 
 ## File Descriptions <a name="files"></a>
-The following files were provided for analysis:
-data/sales_train.csv - the training set. Daily historical data from January 2013 to October 2015. 
+The following files were provided for analysis:  
+data/sales_train.csv - the training set. Daily historical data from January 2013 to October 2015.   
 data/test.csv - the test set. I need to forecast the sales for these shops and products for November 2015. 
 data/sample_submission.csv - a sample submission file in the correct format. 
 data/items.csv - supplemental information about the items/products. 
