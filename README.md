@@ -61,8 +61,9 @@ This diagram represents a total number of items sold in selected stores during t
 The box plot for each shop representing the total number of items sold is demonstrated below.
 <img src="images/monthly_sales_box_plot.png">
 
-Training Method
-The best solution was obtained using XGboost method trained on numerical features ((rmsd score=0.96). However, I also experimented with other models and stacking technique. I created data set using Natural Language Processing (NLP) technique and trained Stochastic Gradient Descent (SGD) Regressor model on this NLP features. The resulted score of 1.13 was higher than XGBoots method trained on numerical features. Then, I applied ensemble of these two methods: I created meta-feature using these two methods trained Random Forest Regressor on this new metadata. The resulted model score (1.12) improved SGD score but didn’t improve XGBoost score. 
+Training Method:   
+The best solution was obtained using XGboost method trained on numerical features ((rmsd score=0.96). However, I also experimented with other models and stacking technique. I created data set using Natural Language Processing (NLP) technique and trained Stochastic Gradient Descent (SGD) Regressor model on this NLP features. The resulted score of 1.13 was higher than XGBoots method trained on numerical features. Then, I applied ensemble of these two methods: I created meta-feature using these two methods trained Random Forest Regressor on this new metadata. The resulted model score (1.12) improved SGD score but didn’t improve XGBoost score.  
+
 The 5 most important features:
 1.	The average amount of different items sold (item_id_item_cnt_month_mean)
 2.	The number of different items sold two months ago (item_id_item_cnt_month_lag2)
@@ -73,10 +74,10 @@ The 5 most important features:
 Feature importance obtained using XGboost plot_importance method
 <img src="images/feature_importances.png">
 
-Interesting Findings
+Interesting Findings:  
 I tried to engineer different lag and mean encoded features. Interestingly, mean price lag encoded features decreased the performance of the model. So, for the final model I used lag encoded features that doesn’t include prices but include only number of items sold.
 
-Model Execution Time
+Model Execution Time:  
 The model training takes 1.5 hour.
 The model prediction takes less than 1 minute.
 
