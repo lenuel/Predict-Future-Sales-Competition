@@ -27,20 +27,19 @@ data/item_categories.csv - supplemental information about the items categories.
 data/shops.csv- supplemental information about the shops.
 
 Data fields: 
-ID - an Id that represents a (Shop, Item) tuple within the test set
-shop_id - unique identifier of a shop 
-item_id - unique identifier of a product 
-item_category_id - unique identifier of item category 
-item_cnt_day - number of products sold. This is a target field that needs to be predicted for a monthly period of time
-item_price - current price of an item date - date in format dd/mm/yyyy 
-date_block_num - a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33 
-item_name - name of item 
-shop_name - name of shop 
-item_category_name - name of item category
+ID - an Id that represents a (Shop, Item) tuple within the test set. 
+shop_id - unique identifier of a shop.   
+item_id - unique identifier of a product.   
+item_category_id - unique identifier of item category.  
+item_cnt_day - number of products sold. This is a target field that needs to be predicted for a monthly period of time. 
+item_price - current price of an item date - date in format dd/mm/yyyy.  
+date_block_num - a consecutive month number, used for convenience. January 2013 is 0, February 2013 is 1,..., October 2015 is 33. 
+item_name - name of item. 
+shop_name - name of shop.  
+item_category_name - name of item category. 
 
-helper.py - the python module with helper functions
-future_sales - python notebook that includes exploratory analysis, feature engineering, model selection and evaluation
-
+helper.py - the python module with helper functions. 
+future_sales.ipynb - python notebook that includes exploratory analysis, feature engineering, model selection and evaluation. 
 
 ## Results<a name="results"></a>
 
